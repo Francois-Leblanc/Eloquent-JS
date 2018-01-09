@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+function isEven(number){
+  if(number < 0){
+    return undefined;
+  }
+  else if(number === 0){
+    return true;
+  }
+  else if(number === 1){
+    return false;
+  }
+  else{
+    return isEven(number-2);
+  }
+}
+
+console.log("50 is even: " + isEven(50));
+console.log("75 is even: " + isEven(75));
+console.log("-1 is even: " + isEven(-1));
+
+</script>
+</body>
+</html>

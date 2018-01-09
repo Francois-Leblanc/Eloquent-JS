@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+function countBs(string){
+  return countChar(string, 'B'); //this is how to 'integrate' countChar into countBs...
+}
+
+function countChar(string, character){
+  var count = 0;
+  for(var i = 0; i < string.length;i++){
+    if(string.charAt(i) === character){
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log("The number of Bs in the string is:", countBs("bBbBb"));
+
+</script>
+</body>
+</html>
